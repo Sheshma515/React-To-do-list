@@ -1,5 +1,5 @@
 # Build environment
-FROM node:14 AS builder # Use a more recent Node.js version
+FROM node:14 AS builder 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
