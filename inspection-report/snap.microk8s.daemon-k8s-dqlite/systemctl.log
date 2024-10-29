@@ -1,0 +1,20 @@
+● snap.microk8s.daemon-k8s-dqlite.service - Service for snap application microk8s.daemon-k8s-dqlite
+     Loaded: loaded (/etc/systemd/system/snap.microk8s.daemon-k8s-dqlite.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2024-10-29 17:40:59 IST; 40min ago
+   Main PID: 1259 (k8s-dqlite)
+      Tasks: 15 (limit: 4647)
+     Memory: 236.9M
+        CPU: 56.029s
+     CGroup: /system.slice/snap.microk8s.daemon-k8s-dqlite.service
+             └─1259 /snap/microk8s/7231/bin/k8s-dqlite --storage-dir=/var/snap/microk8s/7231/var/kubernetes/backend/ --listen=unix:///var/snap/microk8s/7231/var/kubernetes/backend/kine.sock:12379
+
+Oct 29 17:41:05 microk8s-vm microk8s.daemon-k8s-dqlite[1259]: time="2024-10-29T17:41:05+05:30" level=info msg="Configure dqlite failure domain" failure-domain=1
+Oct 29 17:41:05 microk8s-vm microk8s.daemon-k8s-dqlite[1259]: time="2024-10-29T17:41:05+05:30" level=info msg="Disable TLS ClientSessionCache"
+Oct 29 17:41:05 microk8s-vm microk8s.daemon-k8s-dqlite[1259]: time="2024-10-29T17:41:05+05:30" level=info msg="Enable TLS" min_tls_version=tls12
+Oct 29 17:41:07 microk8s-vm microk8s.daemon-k8s-dqlite[1259]: time="2024-10-29T17:41:07+05:30" level=info msg="Started dqlite" address="127.0.0.1:19001" id=3297041220608546238
+Oct 29 17:41:07 microk8s-vm microk8s.daemon-k8s-dqlite[1259]: time="2024-10-29T17:41:07+05:30" level=info msg="New kine for dqlite"
+Oct 29 17:41:07 microk8s-vm microk8s.daemon-k8s-dqlite[1259]: time="2024-10-29T17:41:07+05:30" level=info msg="DriverName is dqlite-1."
+Oct 29 17:41:07 microk8s-vm microk8s.daemon-k8s-dqlite[1259]: time="2024-10-29T17:41:07+05:30" level=info msg="Kine listening on unix:///var/snap/microk8s/7231/var/kubernetes/backend/kine.sock:12379"
+Oct 29 17:41:07 microk8s-vm microk8s.daemon-k8s-dqlite[1259]: time="2024-10-29T17:41:07+05:30" level=info msg="Started kine" address="unix:///var/snap/microk8s/7231/var/kubernetes/backend/kine.sock:12379" database="dqlite://k8s?admission-control-only-write-queries=false&admission-control-policy=allow-all&admission-control-policy-limit-max-concurrent-txn=300&driver-name=dqlite-1&watch-query-timeout=20s"
+Oct 29 17:41:07 microk8s-vm microk8s.daemon-k8s-dqlite[1259]: time="2024-10-29T17:41:07+05:30" level=info msg="Enable periodic check for available disk size" dir=/var/snap/microk8s/7231/var/kubernetes/backend/ interval=5s
+Oct 29 17:41:12 microk8s-vm microk8s.daemon-k8s-dqlite[1259]: time="2024-10-29T17:41:12+05:30" level=error msg="error while range on /registry/serviceaccounts/ /registry/serviceaccounts/: context canceled"

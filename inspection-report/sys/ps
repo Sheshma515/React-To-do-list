@@ -1,0 +1,154 @@
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 17:40 ?        00:00:04 /sbin/init
+root           2       0  0 17:40 ?        00:00:00 [kthreadd]
+root           3       2  0 17:40 ?        00:00:00 [rcu_gp]
+root           4       2  0 17:40 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 17:40 ?        00:00:00 [slub_flushwq]
+root           6       2  0 17:40 ?        00:00:00 [netns]
+root           8       2  0 17:40 ?        00:00:00 [kworker/0:0H-events_highpri]
+root           9       2  0 17:40 ?        00:00:00 [kworker/u4:0-writeback]
+root          10       2  0 17:40 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 17:40 ?        00:00:00 [rcu_tasks_rude_]
+root          12       2  0 17:40 ?        00:00:00 [rcu_tasks_trace]
+root          13       2  0 17:40 ?        00:00:00 [ksoftirqd/0]
+root          14       2  0 17:40 ?        00:00:00 [rcu_sched]
+root          15       2  0 17:40 ?        00:00:00 [migration/0]
+root          16       2  0 17:40 ?        00:00:00 [idle_inject/0]
+root          18       2  0 17:40 ?        00:00:00 [cpuhp/0]
+root          19       2  0 17:40 ?        00:00:00 [cpuhp/1]
+root          20       2  0 17:40 ?        00:00:00 [idle_inject/1]
+root          21       2  0 17:40 ?        00:00:00 [migration/1]
+root          22       2  0 17:40 ?        00:00:00 [ksoftirqd/1]
+root          24       2  0 17:40 ?        00:00:00 [kworker/1:0H-events_highpri]
+root          25       2  0 17:40 ?        00:00:00 [kdevtmpfs]
+root          26       2  0 17:40 ?        00:00:00 [inet_frag_wq]
+root          27       2  0 17:40 ?        00:00:00 [kauditd]
+root          28       2  0 17:40 ?        00:00:00 [khungtaskd]
+root          29       2  0 17:40 ?        00:00:00 [oom_reaper]
+root          30       2  0 17:40 ?        00:00:00 [writeback]
+root          31       2  0 17:40 ?        00:00:00 [kcompactd0]
+root          32       2  0 17:40 ?        00:00:00 [ksmd]
+root          33       2  0 17:40 ?        00:00:00 [khugepaged]
+root          79       2  0 17:40 ?        00:00:00 [kintegrityd]
+root          80       2  0 17:40 ?        00:00:00 [kblockd]
+root          81       2  0 17:40 ?        00:00:00 [blkcg_punt_bio]
+root          83       2  0 17:40 ?        00:00:00 [tpm_dev_wq]
+root          84       2  0 17:40 ?        00:00:00 [ata_sff]
+root          85       2  0 17:40 ?        00:00:00 [md]
+root          86       2  0 17:40 ?        00:00:00 [edac-poller]
+root          87       2  0 17:40 ?        00:00:00 [devfreq_wq]
+root          88       2  0 17:40 ?        00:00:00 [watchdogd]
+root          90       2  0 17:40 ?        00:00:00 [kworker/1:1H-kblockd]
+root          92       2  0 17:40 ?        00:00:00 [kswapd0]
+root          93       2  0 17:40 ?        00:00:00 [ecryptfs-kthrea]
+root          95       2  0 17:40 ?        00:00:00 [kthrotld]
+root          96       2  0 17:40 ?        00:00:00 [acpi_thermal_pm]
+root          97       2  0 17:40 ?        00:00:00 [kworker/u4:2-events_power_efficient]
+root          98       2  0 17:40 ?        00:00:00 [vfio-irqfd-clea]
+root          99       2  0 17:40 ?        00:00:00 [mld]
+root         100       2  0 17:40 ?        00:00:00 [ipv6_addrconf]
+root         110       2  0 17:40 ?        00:00:00 [kstrp]
+root         113       2  0 17:40 ?        00:00:00 [zswap-shrink]
+root         114       2  0 17:40 ?        00:00:00 [kworker/u5:0]
+root         121       2  0 17:40 ?        00:00:00 [charger_manager]
+root         170       2  0 17:40 ?        00:00:00 [cryptd]
+root         177       2  0 17:40 ?        00:00:00 [kworker/0:1H-kblockd]
+root         182       2  0 17:40 ?        00:00:00 [hv_vmbus_con]
+root         185       2  0 17:40 ?        00:00:00 [hv_pri_chan]
+root         187       2  0 17:40 ?        00:00:00 [hv_sub_chan]
+root         219       2  0 17:40 ?        00:00:00 [scsi_eh_0]
+root         221       2  0 17:40 ?        00:00:00 [scsi_tmf_0]
+root         277       2  0 17:40 ?        00:00:00 [raid5wq]
+root         321       2  0 17:40 ?        00:00:01 [jbd2/sda1-8]
+root         322       2  0 17:40 ?        00:00:00 [ext4-rsv-conver]
+root         396       1  0 17:40 ?        00:00:00 /lib/systemd/systemd-journald
+root         418       2  0 17:40 ?        00:00:00 [kworker/1:3-cgroup_destroy]
+root         429       2  0 17:40 ?        00:00:00 [kaluad]
+root         430       2  0 17:40 ?        00:00:00 [kmpath_rdacd]
+root         431       2  0 17:40 ?        00:00:00 [kmpathd]
+root         432       2  0 17:40 ?        00:00:00 [kmpath_handlerd]
+root         433       1  0 17:40 ?        00:00:00 /sbin/multipathd -d -s
+root         436       1  0 17:40 ?        00:00:00 /lib/systemd/systemd-udevd
+root         484       2  0 17:40 ?        00:00:00 [hv_balloon]
+systemd+     581       1  0 17:40 ?        00:00:00 /lib/systemd/systemd-timesyncd
+systemd+     697       1  0 17:40 ?        00:00:00 /lib/systemd/systemd-networkd
+systemd+     699       1  0 17:40 ?        00:00:00 /lib/systemd/systemd-resolved
+root         738       1  0 17:40 ?        00:00:00 /usr/sbin/cron -f -P
+message+     739       1  0 17:40 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         745       1  0 17:40 ?        00:00:00 /usr/sbin/irqbalance --foreground
+root         746       1  0 17:40 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+syslog       747       1  0 17:40 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         751       1  0 17:40 ?        00:00:01 /usr/lib/snapd/snapd
+root         754       1  0 17:40 ?        00:00:00 /lib/systemd/systemd-logind
+root         763       1  0 17:40 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root         788       1  0 17:40 ?        00:00:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root         798       1  0 17:40 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root        1077       1  0 17:40 ?        00:00:01 /bin/bash /snap/microk8s/7231/apiservice-kicker
+root        1259       1  2 17:40 ?        00:00:55 /snap/microk8s/7231/bin/k8s-dqlite --storage-dir=/var/snap/microk8s/7231/var/kubernetes/backend/ --listen=unix:///var/snap/microk8s/7231/var/kubernetes/backend/kine.sock:12379
+root        1479       2  0 17:40 ?        00:00:00 bpfilter_umh
+root        1625       1  0 17:41 ?        00:00:00 /bin/bash /snap/microk8s/7231/run-cluster-agent-with-args
+root        1646    1625  0 17:41 ?        00:00:00 /snap/microk8s/7231/bin/cluster-agent cluster-agent --bind 0.0.0.0:25000 --keyfile /var/snap/microk8s/7231/certs/server.key --certfile /var/snap/microk8s/7231/certs/server.crt --timeout 240
+root        1846       2  0 17:41 ?        00:00:00 [dio/sda1]
+root        1900       1  0 17:41 ?        00:00:15 /snap/microk8s/7231/bin/containerd --config /var/snap/microk8s/7231/args/containerd.toml --root /var/snap/microk8s/common/var/lib/containerd --state /var/snap/microk8s/common/run/containerd --address /var/snap/microk8s/common/run/containerd.sock
+root        3510       1  7 17:41 ?        00:02:51 /snap/microk8s/7231/kubelite --scheduler-args-file=/var/snap/microk8s/7231/args/kube-scheduler --controller-manager-args-file=/var/snap/microk8s/7231/args/kube-controller-manager --proxy-args-file=/var/snap/microk8s/7231/args/kube-proxy --kubelet-args-file=/var/snap/microk8s/7231/args/kubelet --apiserver-args-file=/var/snap/microk8s/7231/args/kube-apiserver --kubeconfig-file=/var/snap/microk8s/7231/credentials/client.config --start-control-plane=true
+root        4507       1  0 17:41 ?        00:00:02 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 69b12e545e5c7a7620e648cedba3286e924f77bba7e1bf90f16b897860d94ae9 -address /var/snap/microk8s/common/run/containerd.sock
+65535       4526    4507  0 17:41 ?        00:00:00 /pause
+root        4689    4507  0 17:41 ?        00:00:00 /usr/local/bin/runsvdir -P /etc/service/enabled
+root        5303       1  0 17:41 ?        00:00:00 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 065e9affb2f3d2ac41bd9fa6bf727916d82c3259027f0ad0c39514a2873d3cec -address /var/snap/microk8s/common/run/containerd.sock
+root        5312       1  0 17:41 ?        00:00:00 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id ea6852e6ea0796338516333d48505bfb2b0e22d631753f70095ab0a424eb302d -address /var/snap/microk8s/common/run/containerd.sock
+65535       5352    5303  0 17:41 ?        00:00:00 /pause
+65535       5363    5312  0 17:41 ?        00:00:00 /pause
+root        5471       1  0 17:41 ?        00:00:00 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 28575d5ddb51d717c5d30657648177bb636b4342b2f591e7ee166c3a5a1ecd9f -address /var/snap/microk8s/common/run/containerd.sock
+root        5505       1  0 17:41 ?        00:00:00 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 109e55a95db0dbbb731bee9bdfbec55ecf7122d57144c0cfe027a0a59388e260 -address /var/snap/microk8s/common/run/containerd.sock
+1337        5525    5471  0 17:41 ?        00:00:00 /pause
+1337        5583    5505  0 17:41 ?        00:00:00 /pause
+1001        5599    5312  0 17:41 ?        00:00:00 /metrics-sidecar
+root        5628    5303  0 17:41 ?        00:00:00 registry serve /etc/docker/registry/config.yml
+1337        5706    5471  0 17:41 ?        00:00:01 /usr/local/bin/pilot-agent proxy router --domain istio-system.svc.cluster.local --proxyLogLevel=warning --proxyComponentLogLevel=misc:error --log_output_level=default:info
+1337        5712    5505  0 17:41 ?        00:00:01 /usr/local/bin/pilot-agent proxy router --domain istio-system.svc.cluster.local --proxyLogLevel=warning --proxyComponentLogLevel=misc:error --log_output_level=default:info
+root        5769    4689  0 17:41 ?        00:00:00 runsv cni
+root        5770    4689  0 17:41 ?        00:00:00 runsv monitor-addresses
+root        5771    4689  0 17:41 ?        00:00:00 runsv node-status-reporter
+root        5772    4689  0 17:41 ?        00:00:00 runsv felix
+root        5773    4689  0 17:41 ?        00:00:00 runsv allocate-tunnel-addrs
+root        5774    5773  0 17:41 ?        00:00:00 calico-node -allocate-tunnel-addrs
+root        5775    5771  0 17:41 ?        00:00:00 calico-node -status-reporter
+root        5776    5770  0 17:41 ?        00:00:00 calico-node -monitor-addresses
+root        5777    5772  1 17:41 ?        00:00:44 calico-node -felix
+root        5778    5769  0 17:41 ?        00:00:00 calico-node -monitor-token
+root        5869       1  0 17:41 ?        00:00:01 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 6e12ff519b0a0d799db5007ec75a3983f2fdf00d3276e6d13cb21671dca5bb1a -address /var/snap/microk8s/common/run/containerd.sock
+65535       5917    5869  0 17:41 ?        00:00:00 /pause
+root        5919       1  0 17:41 ?        00:00:00 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 84cbf14c59588cb2088284cfe316e6ace6f6850770d19edc91343d55f58ca5be -address /var/snap/microk8s/common/run/containerd.sock
+65535       5969    5919  0 17:41 ?        00:00:00 /pause
+root        5985       1  0 17:41 ?        00:00:00 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 839f5147dc960fbe2683beea1f47f29cd44ab4889406e28e9d3ff724a34da2d7 -address /var/snap/microk8s/common/run/containerd.sock
+65535       6027    5985  0 17:41 ?        00:00:00 /pause
+lxd         6058    5869  0 17:41 ?        00:00:00 /usr/bin/kube-controllers
+root        6119       1  0 17:41 ?        00:00:00 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id df2b16284fa621a18e99e143bd37a9f6736ea0bafa9706a4dbb94c0978582cc5 -address /var/snap/microk8s/common/run/containerd.sock
+root        6138    5919  0 17:41 ?        00:00:01 /hostpath-provisioner
+65535       6192    6119  0 17:41 ?        00:00:00 /pause
+1337        6243    5985  0 17:41 ?        00:00:03 /usr/local/bin/pilot-discovery discovery --monitoringAddr=:15014 --log_output_level=default:info --domain cluster.local --keepaliveMaxServerConnectionAge 30m
+ubuntu      6282    6119  0 17:41 ?        00:00:06 /metrics-server --cert-dir=/tmp --secure-port=4443 --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname --kubelet-use-node-status-port --metric-resolution=15s --kubelet-insecure-tls
+1337        6467    5706  0 17:41 ?        00:00:09 /usr/local/bin/envoy -c etc/istio/proxy/envoy-rev.json --drain-time-s 45 --drain-strategy immediate --local-address-ip-version v4 --file-flush-interval-msec 1000 --disable-hot-restart --allow-unknown-static-fields --log-format %Y-%m-%dT%T.%fZ?%l?envoy %n %g:%#?%v?thread=%t -l warning --component-log-level misc:error --concurrency 2
+1337        6468    5712  0 17:41 ?        00:00:09 /usr/local/bin/envoy -c etc/istio/proxy/envoy-rev.json --drain-time-s 45 --drain-strategy immediate --local-address-ip-version v4 --file-flush-interval-msec 1000 --disable-hot-restart --allow-unknown-static-fields --log-format %Y-%m-%dT%T.%fZ?%l?envoy %n %g:%#?%v?thread=%t -l warning --component-log-level misc:error --concurrency 2
+root        6575       1  0 17:41 ?        00:00:00 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 73dcc666dbbaa6159bb14ed7120cd3937d49349c54ae2073fa4b68cb700a56fd -address /var/snap/microk8s/common/run/containerd.sock
+65535       6596    6575  0 17:41 ?        00:00:00 /pause
+1001        6627    6575  0 17:41 ?        00:00:00 /dashboard --insecure-bind-address=0.0.0.0 --bind-address=0.0.0.0 --auto-generate-certificates --namespace=kube-system
+root        6953       1  0 17:41 ?        00:00:00 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id b7092ebd5e13412db4d07f62dad45651b2ca877564e2c557478c74657ce1d923 -address /var/snap/microk8s/common/run/containerd.sock
+65535       6974    6953  0 17:41 ?        00:00:00 /pause
+root        7005    6953  0 17:41 ?        00:00:03 /coredns -conf /etc/coredns/Corefile
+root       29103       2  0 17:55 ?        00:00:00 [kworker/1:0-events]
+root       43850       2  0 18:06 ?        00:00:00 [kworker/0:1-events]
+root       45465       2  0 18:06 ?        00:00:00 [kworker/u4:1-writeback]
+root       52367       2  0 18:11 ?        00:00:00 [kworker/0:0-events]
+root       59708       2  0 18:16 ?        00:00:00 [kworker/0:2-events]
+ubuntu     66611       1  8 18:21 ?        00:00:00 /lib/systemd/systemd --user
+ubuntu     66612   66611  0 18:21 ?        00:00:00 (sd-pam)
+root       66617       2  0 18:21 ?        00:00:00 [kworker/1:1-events]
+root       66750     788  0 18:21 ?        00:00:00 sshd: ubuntu [priv]
+ubuntu     66799   66750  0 18:21 ?        00:00:00 sshd: ubuntu@notty
+root       66800   66799  0 18:21 ?        00:00:00 sudo microk8s.inspect
+root       66801   66800  0 18:21 ?        00:00:00 /bin/bash /snap/microk8s/7231/microk8s.wrapper inspect
+root       66820   66801  0 18:21 ?        00:00:00 sudo -E /snap/microk8s/7231/inspect.sh
+root       66821   66820  0 18:21 ?        00:00:00 bash /snap/microk8s/7231/inspect.sh
+root       66937    1077  0 18:21 ?        00:00:00 sleep 5
+root       66962   66821  0 18:21 ?        00:00:00 ps -ef

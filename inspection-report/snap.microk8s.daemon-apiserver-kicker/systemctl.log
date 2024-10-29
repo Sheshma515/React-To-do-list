@@ -1,0 +1,21 @@
+● snap.microk8s.daemon-apiserver-kicker.service - Service for snap application microk8s.daemon-apiserver-kicker
+     Loaded: loaded (/etc/systemd/system/snap.microk8s.daemon-apiserver-kicker.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2024-10-29 17:40:57 IST; 40min ago
+   Main PID: 1077 (apiservice-kick)
+      Tasks: 2 (limit: 4647)
+     Memory: 8.2M
+        CPU: 53.071s
+     CGroup: /system.slice/snap.microk8s.daemon-apiserver-kicker.service
+             ├─ 1077 /bin/bash /snap/microk8s/7231/apiservice-kicker
+             └─66937 sleep 5
+
+Oct 29 17:41:03 microk8s-vm microk8s.daemon-apiserver-kicker[1077]: cert change detected. Reconfiguring the kube-apiserver
+Oct 29 17:41:08 microk8s-vm sudo[1883]:     root : PWD=/var/snap/microk8s/7231 ; USER=root ; ENV=LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void:/snap/microk8s/7231/lib:/snap/microk8s/7231/usr/lib:/snap/microk8s/7231/lib/x86_64-linux-gnu:/snap/microk8s/7231/usr/lib/x86_64-linux-gnu ; COMMAND=/usr/bin/systemctl kill snap.microk8s.daemon-kubelite.service --signal=SIGKILL
+Oct 29 17:41:08 microk8s-vm sudo[1883]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 29 17:41:08 microk8s-vm sudo[1883]: pam_unix(sudo:session): session closed for user root
+Oct 29 17:41:08 microk8s-vm sudo[1889]:     root : PWD=/var/snap/microk8s/7231 ; USER=root ; ENV=LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void:/snap/microk8s/7231/lib:/snap/microk8s/7231/usr/lib:/snap/microk8s/7231/lib/x86_64-linux-gnu:/snap/microk8s/7231/usr/lib/x86_64-linux-gnu ; COMMAND=/usr/bin/systemctl kill snap.microk8s.daemon-containerd.service --signal=SIGKILL
+Oct 29 17:41:08 microk8s-vm sudo[1889]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 29 17:41:08 microk8s-vm sudo[1889]: pam_unix(sudo:session): session closed for user root
+Oct 29 17:41:09 microk8s-vm sudo[2158]:     root : PWD=/var/snap/microk8s/7231 ; USER=root ; ENV=LD_LIBRARY_PATH=/snap/microk8s/7231/lib:/snap/microk8s/7231/usr/lib:/snap/microk8s/7231/lib/x86_64-linux-gnu:/snap/microk8s/7231/usr/lib/x86_64-linux-gnu CONTAINERD_SNAPSHOTTER=overlayfs ; COMMAND=/snap/microk8s/7231/bin/ctr --address=/var/snap/microk8s/common/run/containerd.sock --namespace k8s.io task ls
+Oct 29 17:41:09 microk8s-vm sudo[2158]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 29 17:41:09 microk8s-vm sudo[2158]: pam_unix(sudo:session): session closed for user root

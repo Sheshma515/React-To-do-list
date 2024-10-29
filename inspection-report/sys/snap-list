@@ -1,0 +1,6 @@
+Name                         Version        Rev    Tracking       Publisher    Notes
+core20                       20240705       2379   latest/stable  canonical**  base
+lxd                          5.0.3-80aeff7  29351  5.0/stable/…   canonical**  -
+microk8s                     v1.28.14       7231   1.28/stable    canonical**  classic
+microk8s-integrator-windows  0.1            1      latest/stable  canonical**  -
+snapd                        2.63           21759  latest/stable  canonical**  snapd

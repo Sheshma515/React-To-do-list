@@ -1,0 +1,71 @@
+Oct 29 17:22:59 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-apiserver-kicker.
+Oct 29 17:23:05 microk8s-vm microk8s.daemon-apiserver-kicker[3759]: Setting up the CNI
+Oct 29 17:23:20 microk8s-vm microk8s.daemon-apiserver-kicker[4252]: Setting up the CNI
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: poddisruptionbudget.policy/calico-kube-controllers created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: serviceaccount/calico-kube-controllers created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: serviceaccount/calico-node created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: configmap/calico-config created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/bgpconfigurations.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/bgppeers.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/blockaffinities.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/caliconodestatuses.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/clusterinformations.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/felixconfigurations.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/globalnetworkpolicies.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/globalnetworksets.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/hostendpoints.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/ipamblocks.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/ipamconfigs.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/ipamhandles.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/ippools.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/ipreservations.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/kubecontrollersconfigurations.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/networkpolicies.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: customresourcedefinition.apiextensions.k8s.io/networksets.crd.projectcalico.org created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: clusterrole.rbac.authorization.k8s.io/calico-kube-controllers created
+Oct 29 17:23:21 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: clusterrole.rbac.authorization.k8s.io/calico-node created
+Oct 29 17:23:22 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: clusterrolebinding.rbac.authorization.k8s.io/calico-kube-controllers created
+Oct 29 17:23:22 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: clusterrolebinding.rbac.authorization.k8s.io/calico-node created
+Oct 29 17:23:22 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: daemonset.apps/calico-node created
+Oct 29 17:23:22 microk8s-vm microk8s.daemon-apiserver-kicker[4264]: deployment.apps/calico-kube-controllers created
+Oct 29 17:23:22 microk8s-vm microk8s.daemon-apiserver-kicker[4298]: configmap/local-registry-hosting created
+Oct 29 17:26:25 microk8s-vm microk8s.daemon-apiserver-kicker[8164]: Signature ok
+Oct 29 17:26:25 microk8s-vm microk8s.daemon-apiserver-kicker[8164]: subject=C = GB, ST = Canonical, L = Canonical, O = Canonical, OU = Canonical, CN = 127.0.0.1
+Oct 29 17:26:25 microk8s-vm microk8s.daemon-apiserver-kicker[8164]: Getting CA Private Key
+Oct 29 17:26:26 microk8s-vm microk8s.daemon-apiserver-kicker[8175]: Signature ok
+Oct 29 17:26:26 microk8s-vm microk8s.daemon-apiserver-kicker[8175]: subject=CN = front-proxy-client
+Oct 29 17:26:26 microk8s-vm microk8s.daemon-apiserver-kicker[8175]: Getting CA Private Key
+Oct 29 17:26:26 microk8s-vm microk8s.daemon-apiserver-kicker[2973]: cert change detected. Restarting the cluster-agent
+Oct 29 17:26:26 microk8s-vm microk8s.daemon-apiserver-kicker[2973]: cert change detected. Reconfiguring the kube-apiserver
+Oct 29 17:26:27 microk8s-vm sudo[8249]:     root : PWD=/var/snap/microk8s/7231 ; USER=root ; ENV=LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void:/snap/microk8s/7231/lib:/snap/microk8s/7231/usr/lib:/snap/microk8s/7231/lib/x86_64-linux-gnu:/snap/microk8s/7231/usr/lib/x86_64-linux-gnu ; COMMAND=/usr/bin/systemctl kill snap.microk8s.daemon-kubelite.service --signal=SIGKILL
+Oct 29 17:26:27 microk8s-vm sudo[8249]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 29 17:26:27 microk8s-vm sudo[8249]: pam_unix(sudo:session): session closed for user root
+Oct 29 17:26:27 microk8s-vm sudo[8255]:     root : PWD=/var/snap/microk8s/7231 ; USER=root ; ENV=LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void:/snap/microk8s/7231/lib:/snap/microk8s/7231/usr/lib:/snap/microk8s/7231/lib/x86_64-linux-gnu:/snap/microk8s/7231/usr/lib/x86_64-linux-gnu ; COMMAND=/usr/bin/systemctl kill snap.microk8s.daemon-containerd.service --signal=SIGKILL
+Oct 29 17:26:27 microk8s-vm sudo[8255]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 29 17:26:27 microk8s-vm sudo[8255]: pam_unix(sudo:session): session closed for user root
+Oct 29 17:26:30 microk8s-vm sudo[8487]:     root : PWD=/var/snap/microk8s/7231 ; USER=root ; ENV=LD_LIBRARY_PATH=/snap/microk8s/7231/lib:/snap/microk8s/7231/usr/lib:/snap/microk8s/7231/lib/x86_64-linux-gnu:/snap/microk8s/7231/usr/lib/x86_64-linux-gnu CONTAINERD_SNAPSHOTTER=overlayfs ; COMMAND=/snap/microk8s/7231/bin/ctr --address=/var/snap/microk8s/common/run/containerd.sock --namespace k8s.io task ls
+Oct 29 17:26:30 microk8s-vm sudo[8487]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 29 17:26:31 microk8s-vm sudo[8487]: pam_unix(sudo:session): session closed for user root
+Oct 29 17:39:47 microk8s-vm systemd[1]: Stopping Service for snap application microk8s.daemon-apiserver-kicker...
+Oct 29 17:39:47 microk8s-vm systemd[1]: snap.microk8s.daemon-apiserver-kicker.service: Deactivated successfully.
+Oct 29 17:39:47 microk8s-vm systemd[1]: Stopped Service for snap application microk8s.daemon-apiserver-kicker.
+Oct 29 17:39:47 microk8s-vm systemd[1]: snap.microk8s.daemon-apiserver-kicker.service: Consumed 25.232s CPU time.
+-- Boot 63561e025c4e4114aa3ea87c8229cd06 --
+Oct 29 17:40:57 microk8s-vm systemd[1]: Started Service for snap application microk8s.daemon-apiserver-kicker.
+Oct 29 17:41:02 microk8s-vm microk8s.daemon-apiserver-kicker[1609]: Signature ok
+Oct 29 17:41:02 microk8s-vm microk8s.daemon-apiserver-kicker[1609]: subject=C = GB, ST = Canonical, L = Canonical, O = Canonical, OU = Canonical, CN = 127.0.0.1
+Oct 29 17:41:02 microk8s-vm microk8s.daemon-apiserver-kicker[1609]: Getting CA Private Key
+Oct 29 17:41:02 microk8s-vm microk8s.daemon-apiserver-kicker[1614]: Signature ok
+Oct 29 17:41:02 microk8s-vm microk8s.daemon-apiserver-kicker[1614]: subject=CN = front-proxy-client
+Oct 29 17:41:02 microk8s-vm microk8s.daemon-apiserver-kicker[1614]: Getting CA Private Key
+Oct 29 17:41:02 microk8s-vm microk8s.daemon-apiserver-kicker[1077]: cert change detected. Restarting the cluster-agent
+Oct 29 17:41:03 microk8s-vm microk8s.daemon-apiserver-kicker[1077]: cert change detected. Reconfiguring the kube-apiserver
+Oct 29 17:41:08 microk8s-vm sudo[1883]:     root : PWD=/var/snap/microk8s/7231 ; USER=root ; ENV=LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void:/snap/microk8s/7231/lib:/snap/microk8s/7231/usr/lib:/snap/microk8s/7231/lib/x86_64-linux-gnu:/snap/microk8s/7231/usr/lib/x86_64-linux-gnu ; COMMAND=/usr/bin/systemctl kill snap.microk8s.daemon-kubelite.service --signal=SIGKILL
+Oct 29 17:41:08 microk8s-vm sudo[1883]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 29 17:41:08 microk8s-vm sudo[1883]: pam_unix(sudo:session): session closed for user root
+Oct 29 17:41:08 microk8s-vm sudo[1889]:     root : PWD=/var/snap/microk8s/7231 ; USER=root ; ENV=LD_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void:/snap/microk8s/7231/lib:/snap/microk8s/7231/usr/lib:/snap/microk8s/7231/lib/x86_64-linux-gnu:/snap/microk8s/7231/usr/lib/x86_64-linux-gnu ; COMMAND=/usr/bin/systemctl kill snap.microk8s.daemon-containerd.service --signal=SIGKILL
+Oct 29 17:41:08 microk8s-vm sudo[1889]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 29 17:41:08 microk8s-vm sudo[1889]: pam_unix(sudo:session): session closed for user root
+Oct 29 17:41:09 microk8s-vm sudo[2158]:     root : PWD=/var/snap/microk8s/7231 ; USER=root ; ENV=LD_LIBRARY_PATH=/snap/microk8s/7231/lib:/snap/microk8s/7231/usr/lib:/snap/microk8s/7231/lib/x86_64-linux-gnu:/snap/microk8s/7231/usr/lib/x86_64-linux-gnu CONTAINERD_SNAPSHOTTER=overlayfs ; COMMAND=/snap/microk8s/7231/bin/ctr --address=/var/snap/microk8s/common/run/containerd.sock --namespace k8s.io task ls
+Oct 29 17:41:09 microk8s-vm sudo[2158]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=0)
+Oct 29 17:41:09 microk8s-vm sudo[2158]: pam_unix(sudo:session): session closed for user root

@@ -1,23 +1,20 @@
-# Build environment
-FROM node:14 AS builder 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+# Use the official Node.js image as the base image
+FROM node:16
 
-# Set the environment path for npm binaries
-ENV PATH=/usr/src/app/node_modules/.bin:$PATH
+# Set the working directory
+WORKDIR /app
 
-# Copy package.json and install dependencies
-COPY package.json /usr/src/app/package.json
-RUN npm install --silent
+# Copy package.json and package-lock.json
+COPY package*.json ./
 
-# Install react-scripts globally
-RUN npm install react-scripts@1.1.1 -g --silent
+# Install dependencies
+RUN npm install
 
 # Copy the rest of the application code
-COPY . /usr/src/app
+COPY . .
 
-# Build the React application
-RUN npm run build
+# Expose the port that the app runs on
+EXPOSE 3000
 
-# Note: This Dockerfile will not serve the application.
-# You can run the build output located in /usr/src/app/build locally or in another server.
+# Command to run the application
+CMD ["npm", "start"]

@@ -1,0 +1,2 @@
+NAMESPACE            NAME             STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS        AGE
+container-registry   registry-claim   Bound    pvc-6a4686a7-f097-44ba-8df5-07d0b498621f   20Gi       RWX            microk8s-hostpath   49m

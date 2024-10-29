@@ -1,0 +1,31 @@
+● snap.microk8s.daemon-containerd.service - Service for snap application microk8s.daemon-containerd
+     Loaded: loaded (/etc/systemd/system/snap.microk8s.daemon-containerd.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2024-10-29 17:41:09 IST; 40min ago
+   Main PID: 1900 (containerd)
+      Tasks: 150 (limit: 4647)
+     Memory: 168.9M
+        CPU: 37.191s
+     CGroup: /system.slice/snap.microk8s.daemon-containerd.service
+             ├─1900 /snap/microk8s/7231/bin/containerd --config /var/snap/microk8s/7231/args/containerd.toml --root /var/snap/microk8s/common/var/lib/containerd --state /var/snap/microk8s/common/run/containerd --address /var/snap/microk8s/common/run/containerd.sock
+             ├─4507 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 69b12e545e5c7a7620e648cedba3286e924f77bba7e1bf90f16b897860d94ae9 -address /var/snap/microk8s/common/run/containerd.sock
+             ├─5303 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 065e9affb2f3d2ac41bd9fa6bf727916d82c3259027f0ad0c39514a2873d3cec -address /var/snap/microk8s/common/run/containerd.sock
+             ├─5312 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id ea6852e6ea0796338516333d48505bfb2b0e22d631753f70095ab0a424eb302d -address /var/snap/microk8s/common/run/containerd.sock
+             ├─5471 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 28575d5ddb51d717c5d30657648177bb636b4342b2f591e7ee166c3a5a1ecd9f -address /var/snap/microk8s/common/run/containerd.sock
+             ├─5505 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 109e55a95db0dbbb731bee9bdfbec55ecf7122d57144c0cfe027a0a59388e260 -address /var/snap/microk8s/common/run/containerd.sock
+             ├─5869 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 6e12ff519b0a0d799db5007ec75a3983f2fdf00d3276e6d13cb21671dca5bb1a -address /var/snap/microk8s/common/run/containerd.sock
+             ├─5919 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 84cbf14c59588cb2088284cfe316e6ace6f6850770d19edc91343d55f58ca5be -address /var/snap/microk8s/common/run/containerd.sock
+             ├─5985 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 839f5147dc960fbe2683beea1f47f29cd44ab4889406e28e9d3ff724a34da2d7 -address /var/snap/microk8s/common/run/containerd.sock
+             ├─6119 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id df2b16284fa621a18e99e143bd37a9f6736ea0bafa9706a4dbb94c0978582cc5 -address /var/snap/microk8s/common/run/containerd.sock
+             ├─6575 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id 73dcc666dbbaa6159bb14ed7120cd3937d49349c54ae2073fa4b68cb700a56fd -address /var/snap/microk8s/common/run/containerd.sock
+             └─6953 /snap/microk8s/7231/bin/containerd-shim-runc-v2 -namespace k8s.io -id b7092ebd5e13412db4d07f62dad45651b2ca877564e2c557478c74657ce1d923 -address /var/snap/microk8s/common/run/containerd.sock
+
+Oct 29 17:42:27 microk8s-vm microk8s.daemon-containerd[1900]: 2024-10-29 17:42:27.835 [INFO][8829] utils.go 195: Calico CNI releasing IP address ContainerID="83e69cb5b93839c3d7d5fd193194183beee007bd8a12aae23a192a8330dc4408"
+Oct 29 17:42:27 microk8s-vm microk8s.daemon-containerd[1900]: 2024-10-29 17:42:27.855 [INFO][8835] ipam_plugin.go 416: Releasing address using handleID ContainerID="83e69cb5b93839c3d7d5fd193194183beee007bd8a12aae23a192a8330dc4408" HandleID="k8s-pod-network.83e69cb5b93839c3d7d5fd193194183beee007bd8a12aae23a192a8330dc4408" Workload="microk8s--vm-k8s-coredns--864597b5fd--n46c6-eth0"
+Oct 29 17:42:27 microk8s-vm microk8s.daemon-containerd[1900]: time="2024-10-29T17:42:27+05:30" level=info msg="About to acquire host-wide IPAM lock." source="ipam_plugin.go:357"
+Oct 29 17:42:27 microk8s-vm microk8s.daemon-containerd[1900]: time="2024-10-29T17:42:27+05:30" level=info msg="Acquired host-wide IPAM lock." source="ipam_plugin.go:372"
+Oct 29 17:42:27 microk8s-vm microk8s.daemon-containerd[1900]: 2024-10-29 17:42:27.860 [WARNING][8835] ipam_plugin.go 433: Asked to release address but it doesn't exist. Ignoring ContainerID="83e69cb5b93839c3d7d5fd193194183beee007bd8a12aae23a192a8330dc4408" HandleID="k8s-pod-network.83e69cb5b93839c3d7d5fd193194183beee007bd8a12aae23a192a8330dc4408" Workload="microk8s--vm-k8s-coredns--864597b5fd--n46c6-eth0"
+Oct 29 17:42:27 microk8s-vm microk8s.daemon-containerd[1900]: 2024-10-29 17:42:27.860 [INFO][8835] ipam_plugin.go 444: Releasing address using workloadID ContainerID="83e69cb5b93839c3d7d5fd193194183beee007bd8a12aae23a192a8330dc4408" HandleID="k8s-pod-network.83e69cb5b93839c3d7d5fd193194183beee007bd8a12aae23a192a8330dc4408" Workload="microk8s--vm-k8s-coredns--864597b5fd--n46c6-eth0"
+Oct 29 17:42:27 microk8s-vm microk8s.daemon-containerd[1900]: time="2024-10-29T17:42:27+05:30" level=info msg="Released host-wide IPAM lock." source="ipam_plugin.go:378"
+Oct 29 17:42:27 microk8s-vm microk8s.daemon-containerd[1900]: 2024-10-29 17:42:27.863 [INFO][8829] k8s.go 589: Teardown processing complete. ContainerID="83e69cb5b93839c3d7d5fd193194183beee007bd8a12aae23a192a8330dc4408"
+Oct 29 17:42:27 microk8s-vm microk8s.daemon-containerd[1900]: time="2024-10-29T17:42:27.864067811+05:30" level=info msg="TearDown network for sandbox \"83e69cb5b93839c3d7d5fd193194183beee007bd8a12aae23a192a8330dc4408\" successfully"
+Oct 29 17:42:27 microk8s-vm microk8s.daemon-containerd[1900]: time="2024-10-29T17:42:27.874764693+05:30" level=info msg="RemovePodSandbox \"83e69cb5b93839c3d7d5fd193194183beee007bd8a12aae23a192a8330dc4408\" returns successfully"

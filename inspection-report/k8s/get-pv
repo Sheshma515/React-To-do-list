@@ -1,0 +1,2 @@
+NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                               STORAGECLASS        REASON   AGE
+pvc-6a4686a7-f097-44ba-8df5-07d0b498621f   20Gi       RWX            Delete           Bound    container-registry/registry-claim   microk8s-hostpath            49m

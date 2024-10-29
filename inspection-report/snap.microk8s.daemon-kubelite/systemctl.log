@@ -1,0 +1,20 @@
+● snap.microk8s.daemon-kubelite.service - Service for snap application microk8s.daemon-kubelite
+     Loaded: loaded (/etc/systemd/system/snap.microk8s.daemon-kubelite.service; enabled; vendor preset: enabled)
+     Active: active (running) since Tue 2024-10-29 17:41:17 IST; 40min ago
+   Main PID: 3510 (kubelite)
+      Tasks: 13 (limit: 4647)
+     Memory: 325.8M
+        CPU: 2min 52.234s
+     CGroup: /system.slice/snap.microk8s.daemon-kubelite.service
+             └─3510 /snap/microk8s/7231/kubelite --scheduler-args-file=/var/snap/microk8s/7231/args/kube-scheduler --controller-manager-args-file=/var/snap/microk8s/7231/args/kube-controller-manager --proxy-args-file=/var/snap/microk8s/7231/args/kube-proxy --kubelet-args-file=/var/snap/microk8s/7231/args/kubelet --apiserver-args-file=/var/snap/microk8s/7231/args/kube-apiserver --kubeconfig-file=/var/snap/microk8s/7231/credentials/client.config --start-control-plane=true
+
+Oct 29 17:42:26 microk8s-vm microk8s.daemon-kubelite[3510]: W1029 17:42:26.913322    3510 dispatcher.go:225] rejected by webhook "rev.validation.istio.io": &errors.StatusError{ErrStatus:v1.Status{TypeMeta:v1.TypeMeta{Kind:"", APIVersion:""}, ListMeta:v1.ListMeta{SelfLink:"", ResourceVersion:"", Continue:"", RemainingItemCount:(*int64)(nil)}, Status:"Failure", Message:"admission webhook \"rev.validation.istio.io\" denied the request: configuration is invalid: gateway must have at least one server", Reason:"", Details:(*v1.StatusDetails)(nil), Code:400}}
+Oct 29 17:42:26 microk8s-vm microk8s.daemon-kubelite[3510]: I1029 17:42:26.913461    3510 trace.go:236] Trace[1925025805]: "Create" accept:application/vnd.kubernetes.protobuf,application/json,audit-id:ff0b31c1-78ce-47c1-b2d4-c8e69cdaccd6,client:10.1.254.84,protocol:HTTP/2.0,resource:gateways,scope:resource,url:/apis/networking.istio.io/v1alpha3/namespaces/istio-system/gateways,user-agent:pilot-discovery/1.18.2,verb:POST (29-Oct-2024 17:42:23.887) (total time: 3026ms):
+Oct 29 17:42:26 microk8s-vm microk8s.daemon-kubelite[3510]: Trace[1925025805]: ["Call validating webhook" configuration:istio-validator-istio-system,webhook:rev.validation.istio.io,resource:networking.istio.io/v1alpha3, Resource=gateways,subresource:,operation:CREATE,UID:0d3715d2-d3c0-41e2-b72d-498e6c0fd7ab 3026ms (17:42:23.887)
+Oct 29 17:42:26 microk8s-vm microk8s.daemon-kubelite[3510]: Trace[1925025805]:  ---"Request completed" 3025ms (17:42:26.913)]
+Oct 29 17:42:26 microk8s-vm microk8s.daemon-kubelite[3510]: Trace[1925025805]: [3.026375874s] [3.026375874s] END
+Oct 29 17:42:27 microk8s-vm microk8s.daemon-kubelite[3510]: I1029 17:42:27.268966    3510 handler.go:275] Adding GroupVersion metrics.k8s.io v1beta1 to ResourceManager
+Oct 29 17:42:53 microk8s-vm microk8s.daemon-kubelite[3510]: I1029 17:42:53.726334    3510 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="istio-system/istio-ingressgateway-77fbf9d476" duration="22.561356ms"
+Oct 29 17:42:53 microk8s-vm microk8s.daemon-kubelite[3510]: I1029 17:42:53.732002    3510 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="istio-system/istio-ingressgateway-77fbf9d476" duration="39.274µs"
+Oct 29 17:42:53 microk8s-vm microk8s.daemon-kubelite[3510]: I1029 17:42:53.951787    3510 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="istio-system/istio-egressgateway-5499894f8d" duration="32.436741ms"
+Oct 29 17:42:53 microk8s-vm microk8s.daemon-kubelite[3510]: I1029 17:42:53.952358    3510 replica_set.go:676] "Finished syncing" kind="ReplicaSet" key="istio-system/istio-egressgateway-5499894f8d" duration="43.811µs"

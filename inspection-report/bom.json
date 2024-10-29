@@ -1,0 +1,147 @@
+{
+  "microk8s": {
+    "version": "1.28",
+    "revision": "19200c975ae99b5e11b638aaea1319a3f18126d4"
+  },
+  "tools": {
+    "go": [
+      "go version go1.21.13 linux/amd64"
+    ],
+    "gcc": [
+      "gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0",
+      "Copyright (C) 2019 Free Software Foundation, Inc.",
+      "This is free software; see the source for copying conditions.  There is NO",
+      "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."
+    ],
+    "python": [
+      "Python 3.8.10 (default, Sep 11 2024, 16:02:53) ",
+      "[GCC 9.4.0]"
+    ],
+    "python-requirements": [
+      "attrs==24.2.0",
+      "certifi==2019.11.28",
+      "chardet==3.0.4",
+      "Click==7.0",
+      "colorama==0.4.3",
+      "cryptography==2.8",
+      "idna==2.8",
+      "jsonschema==4.0.0",
+      "netifaces==0.10.9",
+      "pyOpenSSL==19.0.0",
+      "pyrsistent==0.20.0",
+      "python-dateutil==2.7.3",
+      "PyYAML==6.0.1",
+      "requests==2.22.0",
+      "six==1.14.0",
+      "urllib3==1.25.8"
+    ]
+  },
+  "components": {
+    "cluster-agent": {
+      "repository": "https://github.com/canonical/microk8s-cluster-agent",
+      "version": "1.28",
+      "revision": "15428de5dc9baeafe3956c0d6243be2c36506747",
+      "patches": [],
+      "strict-patches": []
+    },
+    "cni": {
+      "repository": "https://github.com/containernetworking/plugins",
+      "version": "v1.2.0",
+      "revision": "6edcc91e34601398f2e70c35b0a1f6205dcb9a73",
+      "patches": [
+        "0001-single-entrypoint-for-cni-tools.patch"
+      ],
+      "strict-patches": []
+    },
+    "containerd": {
+      "repository": "https://github.com/containerd/containerd",
+      "version": "v1.6.28",
+      "revision": "89251ea71230ce8d8bd69b0539f125b92219cb06",
+      "patches": [
+        "0001-microk8s-sideload-images-plugin.patch"
+      ],
+      "strict-patches": []
+    },
+    "etcd": {
+      "repository": "https://github.com/etcd-io/etcd",
+      "version": "v3.5.5",
+      "revision": "19002cfc689fba2b8f56605e5797bf79f8b61fdd",
+      "patches": [],
+      "strict-patches": []
+    },
+    "flannel-cni-plugin": {
+      "repository": "https://github.com/flannel-io/cni-plugin",
+      "version": "v1.1.2",
+      "revision": "18a3027e7d03feeb6ecdfdbc3bf254a8c8b38b04",
+      "patches": [],
+      "strict-patches": []
+    },
+    "flanneld": {
+      "repository": "https://github.com/flannel-io/flannel",
+      "version": "v0.21.2",
+      "revision": "180bfd46350a30738f8cb3cae0b2ba2255616fae",
+      "patches": [
+        "0001-disable-udp-backend.patch"
+      ],
+      "strict-patches": []
+    },
+    "helm": {
+      "repository": "https://github.com/helm/helm",
+      "version": "v3.9.1",
+      "revision": "1358ada2599c5776a8dc8788c524b5ff5d345b36",
+      "patches": [
+        "0001-disable-warnings-for-kubeconfig-permissions.patch"
+      ],
+      "strict-patches": []
+    },
+    "k8s-dqlite": {
+      "repository": "https://github.com/canonical/k8s-dqlite",
+      "version": "v1.1.11",
+      "revision": "25173c543fba278e6af3d9e31aeb685970901156",
+      "patches": [],
+      "strict-patches": []
+    },
+    "kubernetes": {
+      "repository": "https://github.com/kubernetes/kubernetes",
+      "version": "v1.28.14",
+      "revision": "094b26c2dfdc384bcfd985de6897b9f75b59f0e1",
+      "patches": [
+        "0000-Kubelite-integration.patch",
+        "0001-Set-log-reapply-handling-to-ignore-unchanged.patch"
+      ],
+      "strict-patches": []
+    },
+    "migrator": {
+      "repository": "https://github.com/canonical/go-migrator",
+      "version": "master",
+      "revision": "359c134a461da7cd447bbaeea1064218dcb857c7",
+      "patches": [],
+      "strict-patches": []
+    },
+    "runc": {
+      "repository": "https://github.com/opencontainers/runc",
+      "version": "v1.1.12",
+      "revision": "037feb1ef4edba9727cdcf5f1a0552a21ee1de05",
+      "patches": [
+        "0001-Disable-static-PIE-on-arm64.patch"
+      ],
+      "strict-patches": [
+        "0001-apparmor-change-profile-immediately-not-on-exec.patch",
+        "0002-setns_init_linux-set-the-NNP-flag-after-changing-the.patch",
+        "0003-standard_init_linux-change-AppArmor-profile-as-late-.patch"
+      ]
+    }
+  },
+  "addons": {
+    "community": {
+      "repository": "https://github.com/canonical/microk8s-community-addons",
+      "version": "1.28",
+      "revision": "2d893d11939f6c6ead57bc14f8fd9545b69f323f"
+    },
+    "core": {
+      "repository": "https://github.com/canonical/microk8s-core-addons",
+      "version": "1.28",
+      "revision": "708c4167146cc1cd9fe279d2dc36ec0c071ad1fc"
+    }
+  }
+}
