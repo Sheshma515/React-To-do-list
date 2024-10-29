@@ -1,10 +1,10 @@
 # Build environment
-FROM node:14 AS builder
+FROM node:14 AS builder # Use a more recent Node.js version
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Set the environment path for npm binaries
-ENV PATH /usr/src/app/node_modules/.bin:$PATH
+ENV PATH=/usr/src/app/node_modules/.bin:$PATH
 
 # Copy package.json and install dependencies
 COPY package.json /usr/src/app/package.json
